@@ -1,6 +1,6 @@
 <?php
 
-class tpl {
+class base_tpl {
 
     protected $varsStack = [[]];
     protected $templateDir;
