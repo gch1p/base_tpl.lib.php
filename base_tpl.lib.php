@@ -20,8 +20,6 @@ class base_tpl {
     }
 
     public function fetch($template, array $vars = []) {
-        global $config;
-
         if (!$this->templateDir) throw new Exception('templateDir is not set');
 
         $template = $this->templateDir.'/'.$template;
