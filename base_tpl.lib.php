@@ -35,7 +35,7 @@ class base_tpl {
 
         include $template;
 
-        array_pop($this->varsStack);
+        if (!empty($vars)) array_pop($this->varsStack);
 
         return ob_get_clean();
     }
